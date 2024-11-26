@@ -1,0 +1,20 @@
+.style1, .style2{
+    width: 1px;
+    display: inline-block;
+    background-color: #c9ab81;
+    position: absolute;
+    transform: rotate(72deg) scale(1, 0);
+    transition: transform .4s cubic-bezier(.63,.25,.25,1),
+     -webkit-transform .4s cubic-bezier(.63,.25,.25,1);
+will-change: transform;
+}
+.style1{
+  top: 0;
+    transform-origin: top;
+}
+.style2{
+  transform-origin: bottom;
+}
+.btn:hover .style1, .btn:hover .style2{
+    transform: rotate(72deg);
+}

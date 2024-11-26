@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(60%) sepia(20%) saturate(300%) hue-rotate(20deg) brightness(90%) contrast(100%);
+  }
+
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    color: #C9AB81; 
+  }
+  .font-miniver {
+    font-family: 'Miniver', sans-serif;
+  }
+}
+
